@@ -3,6 +3,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+# Steps to start the app
+1. Create a account in mlab.com.
+    create a database and in the database create a user.
+2. Clone the app in your local machine.
+3. For server: npm install
+4. For client, change the path to client, then, npm install
+3. Create a file name keys.dev in config/ folder and place the following code inside
+    module.exports = {
+      mongoURI: "mongodb://<username>:<password>@ds331145.mlab.com:31145/userauth",
+      secretOrKey: "anything"
+  };
+4. Replace the mongoURI with your own, provided by database of your mlab.
+5. To start the app run: npm run dev 
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
